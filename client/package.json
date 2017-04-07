@@ -1,0 +1,85 @@
+{
+  "name": "vscode-uxlint",
+  "displayName": "Linting using ux-lint",
+  "description": "See ux-lint results inline",
+  "author": "Eric Heikes <eric.heikes@banno.com>",
+  "license": "Apache-2.0",
+  "version": "0.1.0",
+  "publisher": "banno",
+  "engines": {
+    "vscode": "^1.8.0"
+  },
+  "categories": [
+    "Languages",
+    "Linters"
+  ],
+  "keywords": [
+    "html",
+    "javascript",
+    "lint",
+    "linter"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:javascript"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "ux-lint configuration",
+      "properties": {
+        "uxlint.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enables the extension."
+        },
+        "uxlint.exclude": {
+          "type": [
+            "array",
+            "string"
+          ],
+          "default": [
+            "node_modules/**"
+          ],
+          "description": "Files to exclude from linting."
+        },
+        "uxlint.options": {
+          "type": [
+            "object",
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "Options file or object."
+        },
+        "uxlint.path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "Path to the ux-lint module. Defaults to the locally-installed module."
+        }
+      }
+    }
+  },
+  "main": "./extension",
+  "bugs": {
+    "url": "https://github.com/banno/vscode-uxlint/issues"
+  },
+  "homepage": "https://github.com/banno/vscode-uxlint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/banno/vscode-uxlint.git"
+  },
+  "scripts": {
+    "lint": "ux-lint extension.js test/*.js --extend .lintrc",
+    "test": "true # TODO write tests"
+  },
+  "devDependencies": {
+    "ux-lint": "^1.4.0"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^3.1.0"
+  }
+}
