@@ -76,7 +76,7 @@
     "url": "https://github.com/banno/vscode-uxlint.git"
   },
   "scripts": {
-    "lint": "ux-lint **/*.js --extend .lintrc",
+    "lint": "ux-lint *.js --extend .lintrc",
     "start": "node server.js",
     "test": "true # TODO write tests"
   },

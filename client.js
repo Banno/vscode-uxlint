@@ -1,7 +1,5 @@
 'use strict';
 
-const path = require('path');
-
 const { LanguageClient, TransportKind } = require('vscode-languageclient');
 
 function activate(context) {
