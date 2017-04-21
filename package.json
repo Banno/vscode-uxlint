@@ -5,6 +5,7 @@
   "author": "Eric Heikes <eric.heikes@banno.com>",
   "license": "Apache-2.0",
   "version": "0.1.0",
+  "private": true,
   "publisher": "banno",
   "engines": {
     "vscode": "^1.8.0"
