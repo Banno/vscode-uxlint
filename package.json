@@ -15,10 +15,12 @@
     "Linters"
   ],
   "keywords": [
+    "banno",
     "html",
     "javascript",
     "lint",
-    "linter"
+    "linter",
+    "vscode"
   ],
   "activationEvents": [
     "onLanguage:html",
