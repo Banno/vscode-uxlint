@@ -6,7 +6,7 @@ VSCode extension for [ux-lint](https://github.com/Banno/ux-lint) linting of JS a
 
 ## Installation
 
-Go to the [Releases page] to download the VSIX file. Then install it through the VSCode Extensions panel, Command Palette, or command line -- see the [VSCode documentation](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) for details.
+Go to the [Releases page](https://github.com/Banno/vscode-uxlint/releases) to download the VSIX file. Then install it through the VSCode Extensions panel, Command Palette, or command line -- see the [VSCode documentation](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) for details.
 
 ## Options
 
