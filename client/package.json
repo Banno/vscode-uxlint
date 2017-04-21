@@ -77,7 +77,6 @@
     "test": "true # TODO write tests"
   },
   "devDependencies": {
-    "ux-lint": "^1.4.0"
   },
   "dependencies": {
     "vscode-languageclient": "^3.1.0"

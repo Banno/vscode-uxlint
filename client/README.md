@@ -2,9 +2,11 @@
 
 Integrates [ux-lint](https://github.com/Banno/ux-lint) into VSCode.
 
-The extension uses the ux-lint module installed in the opened workspace folder. If ux-lint is installed elsewhere, you can configure the `path` option to point to it (see "Options" below).
+**(This is not actually implemented yet.)** The extension uses the ux-lint module installed in the opened workspace folder. If ux-lint is installed elsewhere, you can configure the `path` option to point to it (see "Options" below).
 
 ## Options
+
+**These options are not yet implemented.**
 
 This extension contributes the following variables to the [settings](https://code.visualstudio.com/docs/customization/userandworkspace):
 
@@ -14,5 +16,7 @@ This extension contributes the following variables to the [settings](https://cod
 * `uxlint.path`: Path to the ux-lint module. Defaults to `node_modules/ux-lint`.
 
 ## Development
+
+Use the Debug panel (cmd+shift+d) in VSCode to launch the extension for testing.
 
 Please use the existing conventions when modifying the project. Use the `lint` and `test` npm scripts to check the code.
