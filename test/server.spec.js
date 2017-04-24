@@ -6,8 +6,6 @@ describe('server', () => {
   const linter = require('ux-lint');
   const proxyquire = require('proxyquire').noCallThru();
 
-  let server;
-
   // Stub out the VSCode connection.
   const fakeConsole = jasmine.createSpyObj('console', ['error']);
   const connection = jasmine.createSpyObj('connection', [
@@ -34,7 +32,7 @@ describe('server', () => {
     spyOn(linter, 'checkCode').and.callThrough();
 
     // Load the module with the stubs.
-    server = proxyquire('../server', {
+    proxyquire('../server', {
       'ux-lint': linter,
       'vscode-languageserver': {
         createConnection: function() { return connection; },
