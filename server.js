@@ -1,10 +1,10 @@
 'use strict';
 
 const {
-  IPCMessageReader,
-  IPCMessageWriter,
   createConnection,
   DiagnosticSeverity,
+  IPCMessageReader,
+  IPCMessageWriter,
   TextDocuments
 } = require('vscode-languageserver');
 const linter = require('ux-lint');

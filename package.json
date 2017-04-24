@@ -76,11 +76,13 @@
     "url": "https://github.com/banno/vscode-uxlint.git"
   },
   "scripts": {
-    "lint": "ux-lint *.js --extend .lintrc",
+    "lint": "ux-lint *.js test/*.js --extend .lintrc",
     "start": "node server.js",
-    "test": "true # TODO write tests"
+    "test": "JASMINE_CONFIG_PATH=test/jasmine.json jasmine"
   },
   "devDependencies": {
+    "jasmine": "^2.5.3",
+    "proxyquire": "^1.7.11",
     "ux-lint": "^1.6.0"
   },
   "dependencies": {
